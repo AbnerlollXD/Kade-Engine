@@ -601,7 +601,7 @@ class FreeplayState extends MusicBeatState
 			trace("Loading " + data.path + "/" + data.sm.header.MUSIC);
 			
 			var sound = new Sound();
-			sound.loadCompressedDataFromByteArray(bytes.getData(), bytes.length);
+			sound.loadCompressedDataFromByteArray
 			FlxG.sound.playMusic(sound);
 		}
 		else
