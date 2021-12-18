@@ -604,9 +604,9 @@ class FreeplayState extends MusicBeatState
 			sound.loadCompressedDataFromByteArray
 			
 		
-		else
+		
 			FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-		#end
+		
 
 		var hmm;
 		try
