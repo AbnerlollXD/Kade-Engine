@@ -599,7 +599,7 @@ class FreeplayState extends MusicBeatState
 		{
 			var data = songs[curSelected];
 			trace("Loading " + data.path + "/" + data.sm.header.MUSIC);
-			var bytes = getBytes(data.path + "/" + data.sm.header.MUSIC);
+			
 			var sound = new Sound();
 			sound.loadCompressedDataFromByteArray(bytes.getData(), bytes.length);
 			FlxG.sound.playMusic(sound);
